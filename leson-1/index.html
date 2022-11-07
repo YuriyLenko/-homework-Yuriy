@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <h1>Форма регістрації</h1>
+        <p>Будь-ласка, заповніть цю форму, щоб створити обліковий запис.</p>
+        <hr />
+
+        <label for="name"><b>Ім'я</b></label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Введіть ваше ім'я"
+          name="name"
+          required
+        />
+
+        <label for="age"><b>Вік</b></label>
+        <input
+          id="age"
+          type="text"
+          placeholder="Вкажіть ваш вік "
+          name="age"
+          required
+        />
+
+        <label for="weight"><b>Вага</b></label>
+        <input
+          id="weight"
+          type="text"
+          placeholder="Вкажіть вашу вагу"
+          name="weight"
+          required
+        />
+
+        <label for="growth"><b>Зріст</b></label>
+        <input
+          id="growth"
+          type="text"
+          placeholder="Вкажіть ваш зріст в сантиметрах"
+          name="growth"
+          required
+        />
+
+        <label>
+          <input
+            class="checkbox"
+            type="checkbox"
+            checked="checked"
+            name="remember"
+          />
+          Запамятати мене
+        </label>
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn" onclick="validateData()">
+            Регістрація
+          </button>
+        </div>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
