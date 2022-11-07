@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="img-container">
+        <button class="g-button prev" onclick="goPrev()"><</button>
+        <button class="g-button next" onclick="goNext()">></button>
+        <img
+          class="img-block"
+          src="https://images.unsplash.com/photo-1591768793355-74d04bb6608f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80 "
+          id="main-img"
+        />
+      </div>
+      <div class="dot-wrapper">
+        <button
+          id="dot1"
+          class="dot-btn active"
+          onclick="changeImg('truck1')"
+        ></button>
+        <button
+          id="dot2"
+          class="dot-btn"
+          onclick="changeImg('truck2')"
+        ></button>
+        <button
+          id="dot3"
+          class="dot-btn"
+          onclick="changeImg('truck3')"
+        ></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
